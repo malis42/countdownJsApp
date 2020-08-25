@@ -10,6 +10,35 @@ html, body {
     overflow: hidden;
 }
 
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    background: #333333;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.tab.active{
+    background: rgba(127, 255, 212, 0.57);
+}
+
+.tab:hover{
+    background: rgba(36, 48, 255, 0.45);
+}
+
 .landing{
     position: relative;
     background-image: url('../img/premier_league/background.jpg');

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li data-tab-target="premier-league">Premier League</li>
-        <li data-tab-target="la-liga">La Liga</li>
-        <li data-tab-target="bundesliga">Bundesliga</li>
+    <ul class="tabs">
+        <li class="tab active" data-tab-target="#premier-league">Premier League</li>
+        <li class="tab" data-tab-target="#la-liga">La Liga</li>
+        <li class="tab" data-tab-target="#bundesliga">Bundesliga</li>
     </ul>
 
     <div class="tab-content">
-        <div id="premier-league">
+        <div id="premier-league" data-tab-content class="active">
             <section class="landing">
                 <div class="landing-inner">
                     <img src="assets/img/premier_league/logo.png" alt="premierLeagueLogo">
@@ -30,11 +30,11 @@
             </section>
         </div>
 
-        <div id="la-liga">
+        <div id="la-liga" data-tab-content>
 
         </div>
 
-        <div id="bundesliga">
+        <div id="bundesliga" data-tab-content>
 
         </div>
     </div>
