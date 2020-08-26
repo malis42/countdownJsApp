@@ -55,9 +55,18 @@ html, body {
     height: 100vh;
 }
 
-#la-liga img{
-    width: 50%;
+#bundesliga .landing{
+    position: relative;
+    background-image: url('../img/bundesliga/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+
+img{
+    height: 30vh;
+}
+
 
 .landing-inner{
     position: relative;
@@ -133,6 +142,7 @@ html, body {
 @media(max-height: 600px){
     img{
         width: 20%;
+        height: 20vm;
     }
 
     p {
@@ -143,6 +153,7 @@ html, body {
 @media(max-height: 400px) {
     img{
         padding-bottom: 3px;
+        height: 10vm;
     }
     h1 {
         display: none;
