@@ -10,16 +10,105 @@ html, body {
     overflow: hidden;
 }
 
-.landing{
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.footer a:visited{
+    color: #ffffff;
+}
+
+.footer a:hover{
+    color: aquamarine;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.navbar{
+    background-color: rgba(10, 4, 6, 0.75);
+    height: 70px;
+}
+
+.tabs{
+    display: flex;
     position: relative;
-    background-image: url('../img/background.jpg');
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/*.tab.active#premier-league-tab{*/
+/*    background: rgb(63, 14, 81);*/
+/*}*/
+
+.tab.active#premier-league-tab{
+    background-image: linear-gradient(rgb(63, 14, 81), #f72a8d);
+}
+
+.tab.active#la-liga-tab{
+    background-image: linear-gradient(rgb(0, 75, 150) 50%, #0090d7);
+}
+
+.tab.active#bundesliga-tab{
+    background-image: linear-gradient(rgb(222, 7, 11) 30%, #800800);
+}
+
+.tab:hover{
+    background: rgba(40, 43, 36, 0.68);
+}
+
+#premier-league .landing{
+    position: relative;
+    background-image: url('../img/premier_league/background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
+#la-liga .landing{
+    position: relative;
+    background-image: url('../img/la_liga/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#bundesliga .landing{
+    position: relative;
+    background-image: url('../img/bundesliga/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+img{
+    height: 30vh;
+}
+
+
 .landing-inner{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -91,8 +180,8 @@ html, body {
 
 @media(max-height: 600px){
     img{
-        width: 20%;
-    }
+        width: auto;
+        padding-bottom: 3px;    }
 
     p {
         display: none;
@@ -101,9 +190,16 @@ html, body {
 
 @media(max-height: 400px) {
     img{
+        width: auto;
         padding-bottom: 3px;
     }
     h1 {
+        display: none;
+    }
+}
+
+@media(max-height: 300px){
+    img{
         display: none;
     }
 }

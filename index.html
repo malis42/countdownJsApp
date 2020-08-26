@@ -10,33 +10,57 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li data-tab-target="premier-league">Premier League</li>
-        <li data-tab-target="la-liga">La Liga</li>
-        <li data-tab-target="bundesliga">Bundesliga</li>
-    </ul>
+    <div class="navbar">
+        <ul class="tabs">
+            <li class="tab active" id="premier-league-tab" data-tab-target="#premier-league">Premier League</li>
+            <li class="tab" id="la-liga-tab" data-tab-target="#la-liga">La Liga</li>
+            <li class="tab" id="bundesliga-tab" data-tab-target="#bundesliga">Bundesliga</li>
+        </ul>
+    </div>
 
     <div class="tab-content">
-        <div id="premier-league">
+        <div id="premier-league" data-tab-content class="active">
             <section class="landing">
                 <div class="landing-inner">
-                    <img src="assets/img/logo.png" alt="premierLeagueLogo">
+                    <img src="assets/img/premier_league/logo.png" alt="premierLeagueLogo">
 
-                    <p>Premier League 2020/21 Start Countdown</p>
-                    <h1>Coming Soon</h1>
+                    <p>Premier League 2020/21 Season Start Countdown</p>
 
-                    <div class="countdown"></div>
+                    <div id="premier-league-countdown" class="countdown"></div>
                 </div>
             </section>
         </div>
 
-        <div id="la-liga">
+        <div id="la-liga" data-tab-content>
+            <section class="landing">
+                <div class="landing-inner">
+                    <img src="assets/img/la_liga/logo.png" alt="laLigaLogo">
 
+                    <p>La Liga 2020/21 Season Start Countdown</p>
+
+                    <div id="la-liga-countdown" class="countdown"></div>
+                </div>
+            </section>
         </div>
 
-        <div id="bundesliga">
+        <div id="bundesliga" data-tab-content>
+            <section class="landing">
+                <div class="landing-inner">
+                    <img src="assets/img/bundesliga/logo.png" alt="bundesligaLogo">
 
+                    <p>Bundesliga 2020/21 Season Start Countdown</p>
+
+                    <div id="bundesliga-countdown" class="countdown"></div>
+                </div>
+            </section>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by:
+            <a href="https://github.com/malis42" target="_blank">malis42</a>
+            <a href="https://github.com/malis42/countdownJsApp" target="_blank">Source code</a>
+        </p>
     </div>
 
     <script src="assets/js/main.js"></script>
