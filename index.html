@@ -13,7 +13,7 @@
     <div class="navbar">
         <ul class="tabs">
             <li class="tab active" id="premier-league-tab" data-tab-target="#premier-league">Premier League</li>
-            <li class="tab" id="la-liga-tab" data-tab-target="#la-liga">La Liga</li>
+            <li class="tab" id="la-liga-tab" data-tab-target="#la-liga">LaLiga</li>
             <li class="tab" id="bundesliga-tab" data-tab-target="#bundesliga">Bundesliga</li>
         </ul>
     </div>
@@ -23,10 +23,26 @@
             <section class="landing">
                 <div class="landing-inner">
                     <img src="assets/img/premier_league/logo.png" alt="premierLeagueLogo">
-
                     <p>Premier League 2020/21 Season Start Countdown</p>
-
                     <div id="premier-league-countdown" class="countdown"></div>
+
+                    <a href="https://www.premierleague.com/fixtures" target="_blank">
+                        <button class="button premier-league-button">
+                                <span>Fixtures</span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.premierleague.com/clubs" target="_blank">
+                        <button class="button premier-league-button">
+                            <span>Teams</span>
+                        </button>
+                    </a>
+
+                    <a href="https://fantasy.premierleague.com/" target="_blank">
+                        <button class="button premier-league-button fpl">
+                            <span>Fantasy Premier League</span>
+                        </button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -35,10 +51,20 @@
             <section class="landing">
                 <div class="landing-inner">
                     <img src="assets/img/la_liga/logo.png" alt="laLigaLogo">
-
-                    <p>La Liga 2020/21 Season Start Countdown</p>
-
+                    <p>LaLiga 2020/21 Season Start Countdown</p>
                     <div id="la-liga-countdown" class="countdown"></div>
+
+                    <a href="https://www.laliga.com/en-GB/laliga-smartbank/calendar" target="_blank">
+                        <button class="button la-liga-button">
+                            <span>Fixtures</span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.laliga.com/en-GB/laliga-smartbank/clubs" target="_blank">
+                        <button class="button la-liga-button">
+                            <span>Teams</span>
+                        </button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -46,23 +72,37 @@
         <div id="bundesliga" data-tab-content>
             <section class="landing">
                 <div class="landing-inner">
-                    <img src="assets/img/bundesliga/logo.png" alt="bundesligaLogo">
-
+                    <img src="assets/img/bundesliga/logo.png" id="bundesliga-logo" alt="bundesligaLogo">
                     <p>Bundesliga 2020/21 Season Start Countdown</p>
-
                     <div id="bundesliga-countdown" class="countdown"></div>
+
+                    <a href="https://www.bundesliga.com/en/bundesliga/matchday" target="_blank">
+                        <button class="button bundesliga-button">
+                            <span>Fixtures</span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.bundesliga.com/en/bundesliga/clubs" target="_blank">
+                        <button class="button bundesliga-button">
+                            <span>Teams</span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.bundesliga.com/en/bundesliga/clubs" target="_blank">
+                        <button class="button bundesliga-button fbl">
+                            <span>Fantasy Bundesliga</span>
+                        </button>
+                    </a>
                 </div>
             </section>
         </div>
     </div>
 
     <div class="footer">
-        <p>Created by:
+        Created by:
             <a href="https://github.com/malis42" target="_blank">malis42</a>
             <a href="https://github.com/malis42/countdownJsApp" target="_blank">Source code</a>
-        </p>
     </div>
-
     <script src="assets/js/main.js"></script>
 </body>
 </html>
