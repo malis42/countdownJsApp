@@ -39,7 +39,7 @@ html, body {
     background: rgba(36, 48, 255, 0.45);
 }
 
-.landing{
+#premier-league .landing{
     position: relative;
     background-image: url('../img/premier_league/background.jpg');
     background-size: cover;
@@ -47,8 +47,20 @@ html, body {
     height: 100vh;
 }
 
+#la-liga .landing{
+    position: relative;
+    background-image: url('../img/la_liga/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#la-liga img{
+    width: 50%;
+}
+
 .landing-inner{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
