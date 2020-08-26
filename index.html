@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul class="tabs">
-        <li class="tab active" data-tab-target="#premier-league">Premier League</li>
-        <li class="tab" data-tab-target="#la-liga">La Liga</li>
-        <li class="tab" data-tab-target="#bundesliga">Bundesliga</li>
-    </ul>
+    <div class="navbar">
+        <ul class="tabs">
+            <li class="tab active" id="premier-league-tab" data-tab-target="#premier-league">Premier League</li>
+            <li class="tab" id="la-liga-tab" data-tab-target="#la-liga">La Liga</li>
+            <li class="tab" id="bundesliga-tab" data-tab-target="#bundesliga">Bundesliga</li>
+        </ul>
+    </div>
 
     <div class="tab-content">
         <div id="premier-league" data-tab-content class="active">
@@ -52,6 +54,13 @@
                 </div>
             </section>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by:
+            <a href="https://github.com/malis42" target="_blank">malis42</a>
+            <a href="https://github.com/malis42/countdownJsApp" target="_blank">Source code</a>
+        </p>
     </div>
 
     <script src="assets/js/main.js"></script>

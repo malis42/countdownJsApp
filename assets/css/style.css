@@ -10,6 +10,25 @@ html, body {
     overflow: hidden;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.footer a:visited{
+    color: #ffffff;
+}
+
+.footer a:hover{
+    color: aquamarine;
+}
+
 [data-tab-content] {
     display: none;
 }
@@ -18,25 +37,45 @@ html, body {
     display: block;
 }
 
+.navbar{
+    background-color: rgba(10, 4, 6, 0.75);
+    height: 70px;
+}
+
 .tabs{
     display: flex;
+    position: relative;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
-    background: #333333;
 }
 
 .tab {
     cursor: pointer;
-    padding: 20px;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
-.tab.active{
-    background: rgba(127, 255, 212, 0.57);
+/*.tab.active#premier-league-tab{*/
+/*    background: rgb(63, 14, 81);*/
+/*}*/
+
+.tab.active#premier-league-tab{
+    background-image: linear-gradient(rgb(63, 14, 81), #f72a8d);
+}
+
+.tab.active#la-liga-tab{
+    background-image: linear-gradient(rgb(0, 75, 150) 50%, #0090d7);
+}
+
+.tab.active#bundesliga-tab{
+    background-image: linear-gradient(rgb(222, 7, 11) 30%, #800800);
 }
 
 .tab:hover{
-    background: rgba(36, 48, 255, 0.45);
+    background: rgba(40, 43, 36, 0.68);
 }
 
 #premier-league .landing{
@@ -141,9 +180,8 @@ img{
 
 @media(max-height: 600px){
     img{
-        width: 20%;
-        height: 20vm;
-    }
+        width: auto;
+        padding-bottom: 3px;    }
 
     p {
         display: none;
@@ -152,10 +190,16 @@ img{
 
 @media(max-height: 400px) {
     img{
+        width: auto;
         padding-bottom: 3px;
-        height: 10vm;
     }
     h1 {
+        display: none;
+    }
+}
+
+@media(max-height: 300px){
+    img{
         display: none;
     }
 }
