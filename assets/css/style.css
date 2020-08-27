@@ -308,7 +308,8 @@ img#bundesliga-logo{
 
 @media(max-width: 650px){
     .landing img{
-        width: 70%;
+        width: 50%;
+        height: auto;
     }
 
     .landing h1{
@@ -316,16 +317,44 @@ img#bundesliga-logo{
     }
 
     .countdown{
-        font-size: 30px;
+        font-size: 20px;
         flex-direction: column;
+    }
+
+    .countdown span{
+        font-size: 20px;
     }
 
     .countdown div{
         width: 80%;
         padding: 10px;
     }
+
+    .interactive-buttons{
+        display: none;
+    }
+
 }
 
+@media (max-height: 1200px) {
+    p {
+        font-weight: bold !important;
+        font-size: 30px !important;
+    }
+
+
+}
+
+@media (max-height: 900px) {
+    p {
+        font-weight: bold !important;
+        font-size: 20px !important;
+    }
+
+    .countdown #seconds{
+        display:none;
+    }
+}
 
 @media(max-height: 600px){
     img{
@@ -335,6 +364,18 @@ img#bundesliga-logo{
 
     p {
         display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .countdown #minutes{
+        display: none;
+    }
+
+    .countdown #seconds{
+        display:none;
     }
 }
 
@@ -347,10 +388,27 @@ img#bundesliga-logo{
     h1 {
         display: none;
     }
+
+
+    .countdown #minutes{
+        display: none;
+    }
+
+    .countdown #seconds{
+        display:none;
+    }
 }
 
 @media(max-height: 300px){
     img{
         display: none;
+    }
+
+    .countdown #minutes{
+        display: none;
+    }
+
+    .countdown #seconds{
+        display:none;
     }
 }
