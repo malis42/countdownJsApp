@@ -40,7 +40,7 @@ html, body {
 
 .navbar{
     overflow: hidden;
-    background-color: rgba(10, 4, 6, 0.75);
+    background-color: rgb(0, 0, 0);
     height: 50px;
     border-bottom: rgba(133, 133, 133, 0.52) 3px solid;
 }
@@ -57,13 +57,24 @@ html, body {
     margin-right: 20px;
 }
 
+#page-logo{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    background-image: url('../img/pageLogo.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:50px;
+    width:229px;
+    vertical-align: top;
+}
+
+
 .navbar .dropdown{
     float: none;
     overflow: hidden;
-}
-
-.button{
-    background-color: #7f0702;
 }
 
 /* The dropdown container */
@@ -71,6 +82,7 @@ html, body {
     display: inline-block;
     justify-content: space-around;
     overflow: hidden;
+    margin-right: 30px;
 }
 
 .dropdown-content {
@@ -94,6 +106,17 @@ html, body {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn{
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.dropbtn:hover{
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+    background: rgba(85, 89, 82, 0.61);
 }
 
 .dropdown:hover .dropdown-content {
@@ -130,7 +153,7 @@ html, body {
 }
 
 .tab:hover{
-    background: rgba(40, 43, 36, 0.68);
+    background: rgba(58, 61, 55, 0.61);
 }
 
 #premier-league .landing{
@@ -307,7 +330,8 @@ img#bundesliga-logo{
 @media(max-height: 600px){
     img{
         width: auto;
-        padding-bottom: 3px;    }
+        padding-bottom: 3px;
+    }
 
     p {
         display: none;
@@ -319,6 +343,7 @@ img#bundesliga-logo{
         width: auto;
         padding-bottom: 3px;
     }
+
     h1 {
         display: none;
     }
