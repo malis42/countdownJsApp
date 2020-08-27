@@ -1,4 +1,5 @@
 // const countdown = document.querySelector('.countdown');
+const whiteText = '#fbfff4';
 
 // Set launch dates [ms]
 const premierLeagueLaunchDate = new Date('Sep 12, 2020 16:00:00 GMT+1').getTime();
@@ -33,10 +34,10 @@ function initCountdown(leagueName, launchDate) {
 
         // Display the result
         countdownDiv.innerHTML = `
-        <div>${days}<span>Days</span></div>
-        <div>${hours}<span>Hours</span></div>
-        <div>${minutes}<span>Minutes</span></div>
-        <div>${seconds}<span>Seconds</span></div>
+        <div id="days">${days}<span>Days</span></div>
+        <div id="hours">${hours}<span>Hours</span></div>
+        <div id="minutes">${minutes}<span>Minutes</span></div>
+        <div id="seconds">${seconds}<span>Seconds</span></div>
     `;
 
         // If launchdate passed
@@ -45,8 +46,8 @@ function initCountdown(leagueName, launchDate) {
             clearInterval(interval);
 
             // Style and output text
-            countdownDiv.style.color = '#17a2b8';
-            countdownDiv.innerHTML = 'Premier League has started!'
+            countdownDiv.style.color = whiteText;
+            countdownDiv.innerHTML = 'This league has started!'
         }
     }, 1000);
 }
