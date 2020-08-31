@@ -1,6 +1,6 @@
-#THIS APP IS DEPRECATED
+# THIS APP IS DEPRECATED
 
-# Soccer Season Starts Countdown App v1.0
+## Soccer Season Starts Countdown App v1.0
 #### Disclaimer: mobile version of this app will come soon, gonna get completetly refactored.
 
 ### Simple app created with basics of JS, HTML and CSS. 
